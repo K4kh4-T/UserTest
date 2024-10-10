@@ -86,7 +86,6 @@
               unityInstance.SetFullscreen(1);
             };
           }
-        }).then((unityInstance) => {
           console.log('Instance created', window.Telegram.WebApp);
           window.unityInstance = unityInstance;
           window.unityInstance.SendMessage("TelegramController", "SetWebAppUser", JSON.stringify(window.Telegram.WebApp.initDataUnsafe.user));
