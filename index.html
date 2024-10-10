@@ -16,7 +16,7 @@
                     id: 45645656489 + Math.floor(Math.random() * 1000),
                     first_name: "FirstName" + Math.floor(Math.random() * 1000),
                     last_name: "LastName" + Math.floor(Math.random() * 1000),
-                    username: "should not be this",
+                    username: "username" + Math.floor(Math.random() * 1000),
                     language_code: "en",
                     allows_write_to_pm: true
                 },
@@ -71,13 +71,13 @@
             expand: () => { }
         }
     </script>
-<script src="https://telegram.org/js/telegram-web-app.js"></script>
+<!-- <script src="https://telegram.org/js/telegram-web-app.js"></script> -->
 </head>
 
 <body style="text-align: center; padding: 0; border: 0; margin: 0;">
     <canvas id="unity-canvas" tabindex="-1"
         style="width: 960px; height: 600px; background: #231F20"></canvas>
-    <script src="Build/ScratccherForTelegram.loader.js"></script>
+    <script src="Build/ScratcccherSendMessage.loader.js"></script>
     <script>
         if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) {
             // Mobile device style: fill the whole browser client area with the game canvas:
@@ -95,9 +95,9 @@
         }
 
         createUnityInstance(document.querySelector("#unity-canvas"), {
-            dataUrl: "Build/ScratccherForTelegram.data",
-            frameworkUrl: "Build/ScratccherForTelegram.framework.js",
-        codeUrl: "Build/ScratccherForTelegram.wasm",
+            dataUrl: "Build/ScratcccherSendMessage.data",
+            frameworkUrl: "Build/ScratcccherSendMessage.framework.js",
+        codeUrl: "Build/ScratcccherSendMessage.wasm",
         streamingAssetsUrl: "StreamingAssets",
             companyName: "HyveLab",
             productName: "scratch-effect-demo",
