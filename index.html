@@ -13,7 +13,7 @@
 <body style="text-align: center; padding: 0; border: 0; margin: 0;">
     <canvas id="unity-canvas" tabindex="-1"
         style="width: 100vw; height: 100vh; background: #231F20"></canvas>
-    <script src="Build/scratcher.loader.js"></script>
+    <script src="Build/Scratcher.loader.js"></script>
     <script>
         if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) {
             // Mobile device style: fill the whole browser client area with the game canvas:
@@ -31,9 +31,9 @@
         }
 
         createUnityInstance(document.querySelector("#unity-canvas"), {
-            dataUrl: "Build/scratcher.data",
-            frameworkUrl: "Build/scratcher.framework.js",
-        codeUrl: "Build/scratcher.wasm",
+            dataUrl: "Build/Scratcher.data",
+            frameworkUrl: "Build/Scratcher.framework.js",
+        codeUrl: "Build/Scratcher.wasm",
         streamingAssetsUrl: "StreamingAssets",
             companyName: "HyveLab",
             productName: "scratch-effect-demo",
