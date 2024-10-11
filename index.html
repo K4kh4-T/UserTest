@@ -71,7 +71,7 @@
             expand: () => { }
         }
     </script>
- <script src="https://telegram.org/js/telegram-web-app.js"></script> 
+<!-- <script src="https://telegram.org/js/telegram-web-app.js"></script> -->
 </head>
 
 <body style="text-align: center; padding: 0; border: 0; margin: 0;">
@@ -107,7 +107,7 @@
       }).then((unityInstance) => {
         console.log('Instance created',window.Telegram.WebApp);
                 window.unityInstance = unityInstance;
-                // window.unityInstance.SendMessage("TelegramController", "SetWebAppUser", JSON.stringify(window.Telegram.WebApp.initDataUnsafe.user));
+                window.unityInstance.SendMessage("TelegramController", "SetWebAppUser", JSON.stringify(window.Telegram.WebApp.initDataUnsafe.user));
             });
     </script>
 
